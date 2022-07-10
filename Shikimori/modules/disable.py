@@ -344,7 +344,7 @@ else:
     DisableAbleRegexHandler = RegexHandler
     DisableAbleMessageHandler = MessageHandler
 
-    __mod_name__ = "Disabling ⃠"
+    __mod_name__ = "Disable"
 
     __help__ = """
 ❂ `/cmds`*:* check the current status of disabled commands
