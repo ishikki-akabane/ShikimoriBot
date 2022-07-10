@@ -31,10 +31,3 @@ CAT_HANDLER = DisableAbleCommandHandler(("cats", "cat"), cats, run_async=True)
 dispatcher.add_handler(CAT_HANDLER)
 
 __mod_name__ = "Animals"
-__help__ = """
-   ➢ `/animalfacts` - To Get random animal facts.
-   ➢ `/cats` - To Get Random Photo of Cats.
-   ➢ `/goose`*:* Sends Random Goose pic.
-   ➢ `/woof`*:* Sends Random Woof pic.
-   ➢ `/lizard`*:* Sends Random Lizard GIFs.
-"""
