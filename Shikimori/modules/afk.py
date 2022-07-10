@@ -162,9 +162,10 @@ dispatcher.add_handler(AFK_REGEX_HANDLER, AFK_GROUP)
 dispatcher.add_handler(NO_AFK_HANDLER, AFK_GROUP)
 dispatcher.add_handler(AFK_REPLY_HANDLER, AFK_REPLY_GROUP)
 
-__mod_name__ = "AFK 💤"
+__mod_name__ = "AFK"
+
 __help__ = """
-*AFK*
- ❍ `/afk` :Tells other users that you are AFK\n
- ❍ `brb` :Tells other users that you are busy right now
+   - /afk <ʀᴇᴀsᴏɴ>: ᴍᴀʀᴋ ʏᴏᴜʀsᴇʟғ ᴀs ᴀғᴋ.
+   - brb <ʀᴇᴀsᴏɴ>: sᴀᴍᴇ ᴀs ᴛʜᴇ ᴀғᴋ ᴄᴏᴍᴍᴀɴᴅ, ʙᴜᴛ ɴᴏᴛ ᴀ ᴄᴏᴍᴍᴀɴᴅ.
+   ᴡʜᴇɴ ᴍᴀʀᴋᴇᴅ ᴀs ᴀғᴋ, ᴀɴʏ ᴍᴇɴᴛɪᴏɴs ᴡɪʟʟ ʙᴇ ʀᴇᴘʟɪᴇᴅ ᴛᴏ ᴡɪᴛʜ ᴀ ᴍᴇssᴀɢᴇ sᴛᴀᴛɪɴɢ ᴛʜᴀᴛ ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ!
 """
