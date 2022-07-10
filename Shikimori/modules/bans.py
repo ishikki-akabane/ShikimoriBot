@@ -579,24 +579,26 @@ __handlers__ = [
     BANME_HANDLER,
 ]
 
-__mod_name__ = "Bans/Mutes 👮"
+__mod_name__ = "Bᴀɴs"
 
 __help__ = """
-*User Commands:*
-
-❂ `/kickme`*:* kicks the user who issued the command
-
+ ❍ /punchme*:* punchs the user who issued the command
+ ❍ /kickme*:* kicks the user who issued the command
+ ❍ /banme*:* bans the user who issued the command
 *Admins only:*
-
-❂ `/ban` <userhandle>*:* bans a user. (via handle, or reply)
-❂ `/sban` <userhandle>*:* Silently ban a user. Deletes command, Replied message and doesn't reply. (via handle, or reply)
-❂ `/tban` <userhandle> x(m/h/d)*:* bans a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.
-❂ `/unban` <userhandle>*:* unbans a user. (via handle, or reply)
-❂ `/kick` <userhandle>*:* kicks a user out of the group, (via handle, or reply)
-❂ `/mute` <userhandle>*:* silences a user. Can also be used as a reply, muting the replied to user.
-❂ `/tmute` <userhandle> x(m/h/d)*:* mutes a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.
-❂ `/unmute` <userhandle>*:* unmutes a user. Can also be used as a reply, muting the replied to user.
-❂ `/zombies`*:* searches deleted accounts
-❂ `/zombies clean`*:* removes deleted accounts from the group.
+ ❍ /ban <userhandle>*:* bans a user. (via handle, or reply)
+ ❍ /sban <userhandle>*:* Silently ban a user. Deletes command, Replied message and doesn't reply. (via handle, or reply)
+ ❍ /tban <userhandle> x(m/h/d)*:* bans a user for `x` time. (via handle, or reply). `m` = `minutes`, `h` = `hours`, `d` = `days`.
+ ❍ /unban <userhandle>*:* unbans a user. (via handle, or reply)
+ ❍ /punch <userhandle>*:* Punches a user out of the group, (via handle, or reply)
+ ❍ /kick <userhandle>*:* same as /punch
+ 
+ *Admins only:*
+ ❍ /mute <userhandle>*:* silences a user. Can also be used as a reply, muting the replied to user.
+ ❍ /tmute <userhandle> x(m/h/d)*:* mutes a user for x time. (via handle, or reply). `m` = `minutes`, `h` = `hours`, `d` = `days`.
+ ❍ /unmute <userhandle>*:* unmutes a user. Can also be used as a reply, muting the replied to user.
+ *ban channel commands:*
+ ❍ `/cban` or `/channelban` ban a channel. 
+ ❍ `/uncban` or `/channelunban`unban channel. 
 """
 
