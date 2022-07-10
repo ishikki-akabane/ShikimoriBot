@@ -60,9 +60,4 @@ async def _(event):
         await KkK.delete()
 
 
-__help__ = """
-Book 
-Available commands:
- - `/book` <book name> : Get the download link of the book
-"""
 __mod_name__ = "Books"
