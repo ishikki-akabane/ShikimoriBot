@@ -41,8 +41,8 @@ def eliminate_channel(update: Update, context: CallbackContext):
         bot.ban_chat_sender_chat(sender_chat_id=sender_chat.id, chat_id=chat.id)
 
 
-__mod_name__ = "Anti Channel"
+__mod_name__ = "Aɴᴛɪ-Cʜᴀɴɴᴇʟ"
 
 __help__ = """
---> `/antichannel` [on/off] - To toggle antichannel
+-> `/antichannel` [on/off] - To toggle antichannel
 """
