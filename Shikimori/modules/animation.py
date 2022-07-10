@@ -314,13 +314,3 @@ __handlers__ = [
 
 
 __mod_name__ = "Animation 🎬"
-
-__help__ = """
-- `/love` ❣️
-- `/hack` 👨‍💻
-- `/bombs` 💣
-- `/moon` 🌖
-- `/clock` 🕑 
-- `/earth` 🌏
-- `/kill` 💀
-"""
