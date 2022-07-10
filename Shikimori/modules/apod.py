@@ -26,6 +26,3 @@ dispatcher.add_handler(apod_handler)
 
 __mod_name__ = "NASA"
 
-__help__ = """
-Use `/apod` to get Picture of the Day by NASA.
-"""
