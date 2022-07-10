@@ -59,9 +59,3 @@ __handlers__ = [CONVERTER_HANDLER]
 
 __mod_name__ = "Currency"
 
-__help__ = """
-*Commands:*
-
-- `/cash` : currency converter
-Example syntax: /cash 1 USD LKR
-"""
