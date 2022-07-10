@@ -585,7 +585,7 @@ __handlers__ = [
 ]
 
 
-__mod_name__ = "Anime ⛩️"
+__mod_name__ = "Aɴɪᴍᴇ"
 
 __help__ = """
                        
@@ -599,4 +599,4 @@ __help__ = """
 > `/kaizoku` <anime>: search an anime on animekaizoku.com
 > `/kayo` <anime>: search an anime on animekayo.com
 > `/latest` : Get list of animes airing today
- """
+ ""
