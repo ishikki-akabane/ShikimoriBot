@@ -247,7 +247,7 @@ def promote(update: Update, context: CallbackContext) -> str:
         bot.promoteChatMember(
             chat.id,
             user_id,
-            can_change_info=bot_member.can_change_info,
+            # can_change_info=bot_member.can_change_info,
             can_post_messages=bot_member.can_post_messages,
             can_edit_messages=bot_member.can_edit_messages,
             can_delete_messages=bot_member.can_delete_messages,
@@ -255,6 +255,7 @@ def promote(update: Update, context: CallbackContext) -> str:
             # can_promote_members=bot_member.can_promote_members,
             can_restrict_members=bot_member.can_restrict_members,
             can_pin_messages=bot_member.can_pin_messages,
+            can_manage_voice_chats=bot_member.can_manage_voice_chats,
         )
     except BadRequest as err:
         if err.message == "User_not_mutual_contact":
@@ -1064,7 +1065,7 @@ __handlers__ = [
 ]
 
 
-__mod_name__ = "Admins 🔑"
+__mod_name__ = "Aᴅᴍɪɴ"
 
 __help__ = """
 *User Commands*:
