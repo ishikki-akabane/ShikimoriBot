@@ -56,8 +56,3 @@ WALLPAPER_HANDLER = DisableAbleCommandHandler("wall", wall, run_async=True)
 dispatcher.add_handler(WALLPAPER_HANDLER)
 
 __mod_name__ = "Wallpaper"
-__help__ = """
-*Wallpaper*
- ❍ `/wall` : Search for wallpaper of given query
- ❍ `/wallpaper` : Get a random wallpaper
-"""
