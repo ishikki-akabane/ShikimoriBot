@@ -83,7 +83,7 @@ def reverse(update: Update, context: CallbackContext):
             return
     else:
         msg.reply_markdown(
-            "uff baka reply to a sticker, or an image to search it!."
+            "Please reply to a sticker, or an image to search it!\nDo you know that you can search an image with a link too? `/reverse [picturelink] <amount>`."
         )
         return
 
@@ -99,12 +99,13 @@ def reverse(update: Update, context: CallbackContext):
         if response != 400:
             xx = bot.send_message(
                 chat_id,
-                "Image was successfully uploaded to Google.",
+                "Image was successfully uploaded to Google."
+                "\nParsing it, please wait.",
                 reply_to_message_id=rtmid,
             )
         else:
             xx = bot.send_message(
-                chat_id, "Google told me to F*** OFF 💀.", reply_to_message_id=rtmid
+                chat_id, "Google told me to go away.", reply_to_message_id=rtmid
             )
             return
 
@@ -129,8 +130,11 @@ def reverse(update: Update, context: CallbackContext):
         images = scam(imgspage, lim)
         if len(images) == 0:
             xx.edit_text(
-                f"[{guess}]({fetchUrl})\n\n[Visually similar images....]({imgspage})"
-                , parse_mode="Markdown", disable_web_page_preview=)
+                f"[{guess}]({fetchUrl})\n[Visually similar images]({imgspage})"
+                "\nCouldn't fetch any images.",
+                parse_mode="Markdown",
+                disable_web_page_preview=True,
+            )
             return
 
         imglinks = []
@@ -213,7 +217,7 @@ def grs(update: Update, context: CallbackContext):
             return
     else:
         msg.reply_markdown(
-            "uff baka reply to a sticker, or an image to search it!."
+            "Please reply to a sticker, or an image to search it!\nDo you know that you can search an image with a link too? `/reverse [picturelink] <amount>`."
         )
         return
 
@@ -229,12 +233,13 @@ def grs(update: Update, context: CallbackContext):
         if response != 400:
             xx = bot.send_message(
                 chat_id,
-                "Image was successfully uploaded to Google.",
+                "Image was successfully uploaded to Google."
+                "\nParsing it, please wait.",
                 reply_to_message_id=rtmid,
             )
         else:
             xx = bot.send_message(
-                chat_id, "Google told me to F*** OFF 💀.", reply_to_message_id=rtmid
+                chat_id, "Google told me to go away.", reply_to_message_id=rtmid
             )
             return
 
@@ -259,8 +264,11 @@ def grs(update: Update, context: CallbackContext):
         images = scam(imgspage, lim)
         if len(images) == 0:
             xx.edit_text(
-                f"[{guess}]({fetchUrl})\n\n[Visually similar images....]({imgspage})"
-                , parse_mode="Markdown", disable_web_page_preview=)
+                f"[{guess}]({fetchUrl})\n[Visually similar images]({imgspage})"
+                "\nCouldn't fetch any images.",
+                parse_mode="Markdown",
+                disable_web_page_preview=True,
+            )
             return
 
         imglinks = []
@@ -466,7 +474,7 @@ def scam(imgspage, lim):
 
 
 REVERSE_HANDLER = DisableAbleCommandHandler(
-    ["reverse", "pp","PP", "Pp", "p", "P"], reverse, pass_args=True, admin_ok=True, run_async=True
+    ["reverse", "pp","PP", "Pp"], reverse, pass_args=True, admin_ok=True, run_async=True
 )
 GRS_HANDLER = DisableAbleCommandHandler(
     "grs", grs, pass_args=True, admin_ok=True, run_async=True
@@ -479,10 +487,9 @@ dispatcher.add_handler(REVERSE_HANDLER)
 dispatcher.add_handler(GRS_HANDLER)
 dispatcher.add_handler(GG_HANDLER)
 
-__mod_name__ = "Rᴇᴠᴇʀsᴇ"
+__mod_name__ = "Reverse 🔄"
 __help__ = """
- •`/reverse` :- reply to a sticker, or an image to search it!
-Do you know that you can search an image with a link too? /reverse picturelink <amount>. 
-alternative commands :-
-• `/r`, `/grs`, `/pp`, `/p`
+*Reverse*
+ ❍ `/pp` : Please reply to a sticker, or an image to search it!
+ ❍ `/reverse` : Please reply to a sticker, or an image to search it!
 """
