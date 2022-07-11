@@ -13,7 +13,7 @@ async def _(event):
     await event.reply(mentions)
     await event.delete()
 
-@tomori(pattern="^@(all|mentionall|tagall|utag) ?(.*)")
+@tomori(pattern="^@(all|tagall|utag) ?(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -42,16 +42,4 @@ async def _(event):
 #     await event.delete()
 
 
-__mod_name__ = "TagAll"
-__help__ = """
-*Tag All*
- ❍ `/users` : Get txt file of all users in your group.
- ❍ `/all` : (reply to message or add another message) To mention all members in your group, without exception.
- ❍ `/tagall` : (reply to message or add another message) To mention all members in your group, without exception.
- ❍ `/utag` : (reply to message or add another message) To mention all members in your group, without exception.
- ❍ `/mentionall` : (reply to message or add another message) To mention all members in your group, without exception.
- ❍ `@all` : (reply to message or add another message) To mention all members in your group, without exception.
- ❍ `@tagall` : (reply to message or add another message) To mention all members in your group, without exception.
- ❍ `@utag` : (reply to message or add another message) To mention all members in your group, without exception.
- ❍ `@mentionall` : (reply to message or add another message) To mention all members in your group, without exception.
-"""
+__mod_name__ = "Tagger"
