@@ -54,11 +54,4 @@ def wiki(update: Update, context: CallbackContext):
 WIKI_HANDLER = DisableAbleCommandHandler("wiki", wiki, run_async = True)
 dispatcher.add_handler(WIKI_HANDLER)
 
-__help__ = """
-Wiki module:
-
-× `/wiki` <query>: Gets Wikipedia article about query
-
-""" 
-
 __mod_name__ = "Wiki"
