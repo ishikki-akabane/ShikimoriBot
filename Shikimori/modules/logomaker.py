@@ -530,14 +530,4 @@ file_helpo = file_help.replace("_", "")
 
 
 
-__help__ = """
- - `/alogo`text :  Create your logo with anime background.
- - `/logo`text :  Create your logo with your name
- - `/wwlogo` text :  Create your logo with your name
- - `/rlogo` text :  Create your logo with your name
- - `/ylogo` text :  Create your logo with your name
- - `/biglogo` text :  Create your logo Bigger Than `logo`
- - `/wlogo` text :  Create your logo with your name
-
- """
 __mod_name__ = "Logo Maker"
