@@ -91,7 +91,7 @@ def report(update: Update, context: CallbackContext) -> str:
             return ""
 
         if reported_user.id in REPORT_IMMUNE_USERS:
-            message.reply_text("Uh? You reporting a Kingdom Asosiation?")
+            message.reply_text("Uh? You reporting a person of Disaster Level?")
             return ""
 
         if chat.username and chat.type == Chat.SUPERGROUP:
@@ -291,7 +291,7 @@ dispatcher.add_handler(SETTING_HANDLER)
 dispatcher.add_handler(REPORT_HANDLER, REPORT_GROUP)
 dispatcher.add_handler(ADMIN_REPORT_HANDLER, REPORT_GROUP)
 
-__mod_name__ = "Reporting ⚠️"
+__mod_name__ = "Rᴇᴘᴏʀᴛɪɴɢ"
 __handlers__ = [
     (REPORT_HANDLER, REPORT_GROUP),
     (ADMIN_REPORT_HANDLER, REPORT_GROUP),
