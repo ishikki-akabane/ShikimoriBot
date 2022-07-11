@@ -66,7 +66,7 @@ def warn(user: User,
             message.reply_text("Tigers cant be warned.")
         else:
             message.reply_text(
-                "Tiger triggered an auto warn filter!\n I can't warn tigers but they should avoid abusing this."
+                "Tiger level disaster triggered an auto warn filter!\n I can't warn Tiger level disaster but they should avoid abusing this."
             )
         return
 
@@ -75,7 +75,7 @@ def warn(user: User,
             message.reply_text("Wolf disasters are warn immune.")
         else:
             message.reply_text(
-                "Wolf Disaster triggered an auto warn filter!\nI can't warn wolves but they should avoid abusing this."
+                "Wolf level Disaster triggered an auto warn filter!\nI can't warn Wolf level Disaster but they should avoid abusing this."
             )
         return
 
@@ -499,7 +499,7 @@ __help__ = """
 ❂ `/strongwarn` <on/yes/off/no>: If set to on, exceeding the warn limit will result in a ban. Else, will just punch.
 """
 
-__mod_name__ = "Wᴀʀɴ"
+__mod_name__ = "Wᴀʀɴs"
 
 WARN_HANDLER = CommandHandler(["warn", "dwarn"], warn_user, filters=Filters.chat_type.groups, run_async=True)
 RESET_WARN_HANDLER = CommandHandler(
