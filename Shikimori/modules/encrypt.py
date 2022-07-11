@@ -29,12 +29,4 @@ async def hmm(event):
 
 __mod_name__ = "Encryption"
 
-___help__ = """
-Here is help for Encryption
-
-Note: Only works for text.
-
- ❍ `/encrypt` - Reply to a text message to Encrypt it.
- ❍ `/decrypt` - Reply to a text message to Decrypt it.
-"""
 
