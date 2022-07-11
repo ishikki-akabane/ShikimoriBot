@@ -25,7 +25,7 @@ async def _(event):
         return
     if event.is_group:
      if not (await is_register_admin(event.input_chat, event.message.sender_id)):
-       await event.reply("🚨 Need Admin Pewer.. You can't use this command.. But you can use in my pm")
+       await event.reply("🚨 Need Admin Power.. You can't use this command.. But you can use in my pm")
        return
 
     score_page = "http://static.cricinfo.com/rss/livescores.xml"
@@ -41,8 +41,3 @@ async def _(event):
     )
 
 __mod_name__ = "Cricket Score 🏏"
-__help__ = """
-*Cricket Score*
- ❍ `/c` : To check live cricket score
- ❍ `/cs` : To check live cricket score
-"""
