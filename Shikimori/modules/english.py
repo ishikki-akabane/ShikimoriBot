@@ -97,12 +97,4 @@ async def _(event):
 
 
 
-__help__ = """
-*Commands:*
-• `/synonyms` <word>*:* find the synonyms of a word.
-• `/antonyms` <word>*:* find the antonyms of a word.
-• `/define` <text>*:* type the word or expression you want to search.
-• `/spell`*:* while replying to a message, will reply with a grammar corrected version.
-"""
-
 __mod_name__ = "Grammar/ English"
