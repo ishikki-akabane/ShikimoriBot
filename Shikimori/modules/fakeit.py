@@ -34,8 +34,3 @@ async def picgen(_, message):
 
 __mod_name__ = "Fake info"
 
-__help__ = """
-*Commands:*
-- `/fakegen` : Generates Fake Information
-- `/picgen` : Generate a Fake pic
-"""
