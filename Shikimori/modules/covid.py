@@ -24,8 +24,4 @@ COVID_HANDLER = DisableAbleCommandHandler(["covid", "corona"], covid, run_async 
 dispatcher.add_handler(COVID_HANDLER)
 
 __mod_name__ = "COVID 19 🦠"
-__help__ = """
-*COVID 19*
-`/corona` - Gives information regarding covid 19 cases
-`/covid` - Gives information regarding covid 19 cases
-"""
+
