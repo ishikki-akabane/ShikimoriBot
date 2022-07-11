@@ -228,6 +228,3 @@ __command_list__ = ["react"]
 __handlers__ = [REACT_HANDLER]
 
 __mod_name__ = "Reactions"
-__help__ = """
---> `/react` : To react to a message.
-"""
