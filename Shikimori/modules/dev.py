@@ -70,15 +70,4 @@ dispatcher.add_handler(RESTART_HANDLER)
 
 __mod_name__ = "Dev Commands"
 
-___help__ = """
-Here is help for Dev Commands.
-
-Note: Consult with other devs before performing any actions.
-
-❂ `/leave` <chat id> - Bot leaves the group.
-❂ `/reboot` - To restart Bot.
-❂ `/gitpull` - Pull changes from github and redeploys the bot. [Must have github connected with Heroku]
-"""
-
-
 __handlers__ = [LEAVE_HANDLER, GITPULL_HANDLER, RESTART_HANDLER]
