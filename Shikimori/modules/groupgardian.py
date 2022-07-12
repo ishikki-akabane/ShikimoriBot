@@ -422,9 +422,9 @@ async def del_profanity(event):
 
  
  
-
- 
-__help__ = """
+"""
+""" 
+__help__ = """  """
 *Group Guardian:*
 ✪ I can protect your group from NSFW senders, Slag word users and also can force members to use English
  
@@ -432,6 +432,7 @@ __help__ = """
  - `/nsfwguardian` <i>on/off</i> - Enable|Disable Porn cleaning
  - `/profanity` <i>on/off</i> - Enable|Disable slag word cleaning
  
+"""
 """
 __mod_name__ = "Group Guardian"
  
