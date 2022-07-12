@@ -149,7 +149,6 @@ async def ws(event):
         os.remove("nudes.jpg")
 
 
-"""
 @pbot.on_edited_message(filters.command("nsfwguardian") & ~filters.bot)
 async def add_nsfw(client, message):
     if len(await member_permissions(message.chat.id, message.from_user.id)) < 1:
@@ -207,7 +206,6 @@ async def nsfw_watch(client, message):
             f"**NSFW DETECTED**\n\n{hehe}'s message contain NSFW content.. So, luna deleted the message\n\n **Nsfw Sender - User / Bot :** `{Escobar}` \n**Chat Title:** `{ctitle}` \n\n`⚔️Automatic Detections Powered By lunaAI` \n**#GROUP_GUARDIAN** ",
         )
         message.continue_propagation()
-"""
 
 
 # This Module is ported from https://github.com/MissJuliaRobot/MissJuliaRobot
