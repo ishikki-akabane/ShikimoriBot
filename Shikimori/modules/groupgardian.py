@@ -149,7 +149,7 @@ async def ws(event):
         os.remove("nudes.jpg")
 
 
-@pbot.on_edited_message(filters.command("nsfwguardian") & ~filters.bot)
+@tbot.on_edited_message(filters.command("nsfwguardian") & ~filters.bot)
 async def add_nsfw(client, message):
     if len(await member_permissions(message.chat.id, message.from_user.id)) < 1:
         await message.reply_text("**You don't have enough permissions**")
@@ -174,7 +174,7 @@ async def add_nsfw(client, message):
     else:
         await message.reply(" I undestand only `/nsfwguardian on` or `/nsfwguardian off` only")
         
-@pbot.on_message(filters.incoming & filters.media & ~filters.private & ~filters.channel & ~filters.bot)
+@tbot.on_message(filters.incoming & filters.media & ~filters.private & ~filters.channel & ~filters.bot)
 async def nsfw_watch(client, message):
     lol = get_all_nsfw_chats()
     if len(lol) == 0:
