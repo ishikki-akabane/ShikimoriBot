@@ -516,7 +516,6 @@ def send_settings(chat_id, user_id, user=False):
                 "Seems like there aren't any user specific settings available :'(",
                 parse_mode=ParseMode.MARKDOWN,
             )
-
     else:
         if CHAT_SETTINGS:
             chat_name = dispatcher.bot.getChat(chat_id).title
