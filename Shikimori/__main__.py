@@ -94,7 +94,7 @@ buttons = [
             text=f" Add {bot_name} to your Group", url=f"t.me/{BOT_USERNAME}?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="❓Help", callback_data="Shikimori_"),
+        InlineKeyboardButton(text=""),
         InlineKeyboardButton(text=" 💬Commands", callback_data="help_back"),
     ],
     [
@@ -374,7 +374,7 @@ def Shikimori_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                    InlineKeyboardButton(text="Repo", url="https://github.com/SOME-1HING/ShikimoriBot"),
+                    InlineKeyboardButton(text="Repo", url=""),
                     ],
                     [
                     InlineKeyboardButton(text="Back", callback_data="Shikimori_back"),
