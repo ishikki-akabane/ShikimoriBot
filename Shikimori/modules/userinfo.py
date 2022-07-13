@@ -118,7 +118,7 @@ def hpmanager(user):
 
 def make_bar(per):
     done = min(round(per / 10), 10)
-    return "❤" * done + "♡" * (10 - done)
+    return "♦️" * done + "◇" * (10 - done)
 
 
 def get_id(update: Update, context: CallbackContext):
@@ -219,10 +219,10 @@ def info(update: Update, context: CallbackContext):
     [
                         InlineKeyboardButton(
                              text="Health",
-                             url="https://t.me/Shikimori_bot_Updates/9"),
+                             url="https://t.me/kakashi_updates/4"),
                        InlineKeyboardButton(
                              text="Disasters",
-                             url="https://t.me/Shikimori_bot_Updates/6"),
+                             url="https://t.me/kakashi_updates/3"),
                     ],
     ]
     user_id = extract_user(update.effective_message, args)
@@ -251,21 +251,21 @@ def info(update: Update, context: CallbackContext):
     rep = message.reply_text("<code>Appraising...</code>", parse_mode=ParseMode.HTML)
 
     text = (
-        f"╒═══「<b>• Appraisal results •</b> 」\n"
-        f"• ID: <code>{user.id}</code>\n"
-        f"• First Name: {html.escape(user.first_name)}"
+        f"═══「<b>• 「 This user info 」 •</b> 」\n"
+        f"🔶 ID: <code>{user.id}</code>\n"
+        f"🔶 First Name: {html.escape(user.first_name)}"
     )
 
     if user.last_name:
-        text += f"\n• Last Name: {html.escape(user.last_name)}"
+        text += f"\n🔶 Last Name: {html.escape(user.last_name)}"
 
     if user.username:
-        text += f"\n• Username: @{html.escape(user.username)}"
+        text += f"\n🔶 Username: @{html.escape(user.username)}"
 
-    text += f"\n• Userlink: {mention_html(user.id, 'link')}"
+    text += f"\n🔶 Userlink: {mention_html(user.id, 'link')}"
 
     if chat.type != "private" and user_id != bot.id:
-        _stext = "\n• Presence: <code>{}</code>"
+        _stext = "\n🔶 Presence: <code>{}</code>"
 
         afk_st = is_user_afk(user.id)
         if afk_st:
@@ -295,27 +295,27 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\nThis person is my 'Owner'."
-    elif user.id == 949365920:
-        text += "\n\nThis is my VC player assistant to play music."
+        text += "\n\nThis person is Momoshiki."
+    elif user.id == 5030730429:
+        text += "\n\nThis person is Isshiki"
         disaster_level_present = True
-    elif user.id == 2119580786:
-        text += "\n\nThis person is my 'Manager' and My 'Best Friend'."
+    elif user.id == 5039582471:
+        text += "\n\nThis person is my ."
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n\nThis person is my 'Best Friend'."
+        text += "\n\nThis person is a Sage."
         disaster_level_present = True
     elif user.id in DRAGONS:
-        text += "\n\nThis person is my 'Friend'."
+        text += "\n\nThis person is a Hokage."
         disaster_level_present = True
     elif user.id in DEMONS:
-        text += "\n\nThis person is my 'Servant'."
+        text += "\n\nThis person is a Special Jounin."
         disaster_level_present = True
     elif user.id in TIGERS:
-        text += "\n\nThis person is just a 'Peasant'."
+        text += "\n\nThis person is a Jounin'."
         disaster_level_present = True
     elif user.id in WOLVES:
-        text += "\n\nThis person is just a 'Slave'."
+        text += "\n\nThis person is a Chuunin."
         disaster_level_present = True
 
 
