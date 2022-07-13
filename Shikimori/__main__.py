@@ -94,12 +94,12 @@ buttons = [
             text=f" Add {bot_name} to your Group", url=f"t.me/{BOT_USERNAME}?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="🔱Owner", url=f"https://t.me/{OWNER_USERNAME}"),
+        InlineKeyboardButton(text="🔱Gojo satoru", url=f"https://t.me/@Gojo_satoruxbot"),
         InlineKeyboardButton(text=" 💬Commands", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="🚨Support Grp", url=f"https://t.me/{SUPPORT_CHAT}"),
-        InlineKeyboardButton(text="❗Updates", url=f"https://t.me/{UPDATE_CHANNEL}"),
+        InlineKeyboardButton(text="🚑Support Grp", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="💠Updates", url=f"https://t.me/{UPDATE_CHANNEL}"),
    
     ], 
 ]
