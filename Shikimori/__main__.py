@@ -94,8 +94,8 @@ buttons = [
             text=f" Add {bot_name} to your Group", url=f"t.me/{BOT_USERNAME}?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text "🔱owner", url="https://t.me/@doujin_hunter"),
-        InlineKeyboardButton(text=" 💬Commands", callback_data="help_back"),
+        InlineKeyboardButton(text="owner", url="https://t.me/@doujin_hunter"),
+        InlineKeyboardButton(text="💬Commands", callback_data="help_back"),
     ],
     [
         InlineKeyboardButton(text="🚑Support Grp", url=f"https://t.me/{SUPPORT_CHAT}"),
