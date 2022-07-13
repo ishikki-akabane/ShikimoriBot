@@ -22,8 +22,7 @@ def awake(update: Update, context: CallbackContext):
     user = message.from_user
 
     TEXT = f"""
-    <b>Hi <a href="tg://user?id={user.id}">{first_name}</a>, I'm Shikomori Robot.
-
+    <b>Hi <a href="tg://user?id={user.id}">{first_name}</a>, I'm Kakashi hatake.
 ⚪ I'm Working Properly
 
 ⚪ My Owner : <a href="https://t.me/{OWNER_USERNAME}">{OWNER_USERNAME}</a></b>
