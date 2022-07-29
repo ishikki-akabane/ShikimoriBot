@@ -10,7 +10,7 @@
       ],
     
    "logo":    "https://telegra.ph/file/05fabeb65cd4c1a80c079.jpg",  
-   "repository": "https://github.com/SOME-1HING/ShikimoriBot",
+   "repository": "https://github.com/KACxCHAN/ShikimoriBot",
    "buildpacks": [
     {
       "url": "https://github.com/heroku/heroku-buildpack-python"
