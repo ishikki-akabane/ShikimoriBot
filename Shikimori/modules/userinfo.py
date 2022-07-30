@@ -143,7 +143,7 @@ def hpmanager(user):
 
 def make_bar(per):
     done = min(round(per / 10), 10)
-    return "💗" * done + "♡" * (10 - done)
+    return "🔪" * done + "♡" * (10 - done)
 
 
 def get_id(update: Update, context: CallbackContext):
@@ -306,26 +306,26 @@ def info(update: Update, context: CallbackContext):
                     text += _stext.format("Admin")
     if user_id not in [bot.id, 777000, 1087968824]:
         userhp = hpmanager(user)
-        text += f"\n\n<b>Health:</b> <code>{userhp['earnedhp']}/{userhp['totalhp']}</code>\n[<i>{make_bar(int(userhp['percentage']))} </i>{userhp['percentage']}%]"
+        text += f"\n\n<b>Blood Level:</b> <code>{userhp['earnedhp']}/{userhp['totalhp']}</code>\n[<i>{make_bar(int(userhp['percentage']))} </i>{userhp['percentage']}%]"
 
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\nThis person is my 'Owner'."
+        text += "\n\nAra ! Ara ! KAC CHAN 😩💥."
     elif user.id in DEV_USERS:
-        text += "\n\nThis person is my 'Best Friend'."
+        text += "\n\nVillain League Member 🏴'."
         disaster_level_present = True
     elif user.id in DRAGONS:
-        text += "\n\nThis person is my 'Friend'."
+        text += "\n\nKAC CHAN Friend 🐬."
         disaster_level_present = True
     elif user.id in DEMONS:
-        text += "\n\nThis person is my 'Servant'."
+        text += "\n\nHero Quirk User 🗡️'."
         disaster_level_present = True
     elif user.id in TIGERS:
-        text += "\n\nThis person is just a 'Peasant'."
+        text += "\n\nTOGA's Crime Partner 🦄'."
         disaster_level_present = True
     elif user.id in WOLVES:
-        text += "\n\nThis person is just a 'Slave'."
+        text += "\n\nQuirkLess 🐣'."
         disaster_level_present = True
 
 
