@@ -311,21 +311,21 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\nAra ! Ara ! TØMU RA !."
+        text += "\n\nAra ! Ara ! TØMU  RA ❄️ !!"
     elif user.id in DEV_USERS:
-        text += "\n\nTOGA's Crime Partner 🦄 !'."
+        text += "\n\nTOGA's Crime Partner 🦄 !!"
         disaster_level_present = True
     elif user.id in DRAGONS:
-        text += "\n\nEight Precepts Of Death ❄️ !."
+        text += "\n\nEight Precepts Of Death 🥀 !!"
         disaster_level_present = True
     elif user.id in DEMONS:
-        text += "\n\nVillan's Assets 🖤 !'."
+        text += "\n\nVillan's Assets 🖤 !!"
         disaster_level_present = True
     elif user.id in TIGERS:
-        text += "\n\nNØMU 💣 !."
+        text += "\n\nNØMU 💣 !!"
         disaster_level_present = True
     elif user.id in WOLVES:
-        text += "\n\nQuirkLess 🐣'."
+        text += "\n\nQuirkLess 🐣 !!"
         disaster_level_present = True
 
 
