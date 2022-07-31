@@ -141,8 +141,8 @@ def stats(update, context):
                 [
                   [                  
                        InlineKeyboardButton(
-                                text="OWNER",
-                                url="https://t.me/YourPervertSenpai"),
+                                text="REPO",
+                                url="https://github.com/SOME-1HING/ShikimoriBot"),
                      ] 
                 ]
             ),
