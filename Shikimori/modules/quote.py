@@ -6,7 +6,7 @@ from pyrogram.types import Message
 
 from Shikimori import arq
 from Shikimori.utils.errors import capture_err
-from Shikimori import pgram as app
+from Shikimori import pbot as app
 
 
 async def quotify(messages: list):
