@@ -83,8 +83,12 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = f"""
-\nI am *{bot_name}* , a group management bot based on the anime *{ANIME_NAME}*![ ]({START_MEDIA})
+I am *{bot_name}* , a group management bot based on the anime *{ANIME_NAME}*![ ]({START_MEDIA})
 
+My Owner - [Katsu The Great](https://t.me/Katsu_the_great)
+My Developer - [Ishikki Akabane](https://t.me/ishikki_akabane)
+
+Powered by [「𝔾𝕆𝔻𝕊 (神) ™」](https://t.me/The_gods_network)
 *Click on the Commands Button below to go through my commands.*
 """
 
@@ -94,14 +98,12 @@ buttons = [
             text=f" Add {bot_name} to your Group", url=f"t.me/{BOT_USERNAME}?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="❓About", callback_data="Shikimori_"),
-        InlineKeyboardButton(text=" 💬Commands", callback_data="help_back"),
+        InlineKeyboardButton(text="Support", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="About", callback_data="Shikimori_"),
     ],
     [
-        InlineKeyboardButton(text="🚨Support Grp", url=f"https://t.me/{SUPPORT_CHAT}"),
-        InlineKeyboardButton(text="❗Updates", url=f"https://t.me/{UPDATE_CHANNEL}"),
-   
-    ], 
+        InlineKeyboardButton(text="Help", callback_data="help_back"),
+    ],
 ]
 
 HELP_STRINGS = """
@@ -371,12 +373,8 @@ def Shikimori_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                    InlineKeyboardButton(text="Github", callback_data="github_"),
-                    InlineKeyboardButton(text="License", callback_data="license_"),
-                    ],
-                    [
-                    InlineKeyboardButton(text="【V๏ɪ፝֟𝔡】✧Network✧", callback_data="void_"),
-                    InlineKeyboardButton(text="Documentation", url="https://some1hing.gitbook.io/shikimori-bot/"),
+                    InlineKeyboardButton(text="「𝔾𝕆𝔻𝕊 (神) ™」Network", url="https://t.me/The_gods_network"),
+                    InlineKeyboardButton(text="Team", url="https://t.me/The_gods_network/73"),
                     ],
                     [
                     InlineKeyboardButton(text="Back", callback_data="Shikimori_back"),
